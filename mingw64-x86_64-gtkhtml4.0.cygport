@@ -1,0 +1,18 @@
+CROSS_HOST="x86_64-w64-mingw32"
+ORIG_PN="gtkhtml"
+inherit cross gnome2
+
+NAME="mingw64-x86_64-gtkhtml4.0"
+VERSION=4.6.6
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="GNOME Evolution HTML rendering/editing engine for Win64 toolchain"
+DESCRIPTION="GtkHTML is a lightweight HTML rendering/printing/editing engine.
+It was originally based on KHTMLW, part of the KDE project, but is now being
+developed independently."
+HOMEPAGE="http://www.gnome.org/projects/evolution/"
+
+PATCH_URI="4.2.2-no-undefined.patch"
+
+LIBS+=" -lgnurx"
+MAKEOPTS+=" bin_PROGRAMS= "
