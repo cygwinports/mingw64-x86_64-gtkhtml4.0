@@ -3,7 +3,7 @@ ORIG_PN="gtkhtml"
 inherit cross gnome2
 
 NAME="mingw64-x86_64-gtkhtml4.0"
-VERSION=4.6.6
+VERSION=4.8.5
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GNOME Evolution HTML rendering/editing engine for Win64 toolchain"
